@@ -4,16 +4,16 @@ function pedir(){
 
     switch(x){
         case "0":
-            alert("O x vale 0 ! :) ")
+            alert(`O x vale ${x} ! :)`);
             break;
         case "1":
-            alert("O x vale 1 ! :) ")
+            alert(`O x vale ${x} ! :)`);
             break;
         case "2":
-            alert("O x vale 2 ! :) ")
+            alert(`O x vale ${x} ! :)`);
             break;
             default:
-                alert("Não temos essa opção")
+                alert(`Não temos a opção ${x}`);
     }
 }
 
