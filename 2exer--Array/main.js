@@ -12,7 +12,7 @@ function main(){
 
 
 function mainArray(){
-     var list = ["Erick", "Paul", "Andrade", "Kleniving"];
+     var list = ["Laranja", "Uva", "Maça", "Goiaba","Acerola"];
  
      var text = document.getElementById('bemVindo')
      

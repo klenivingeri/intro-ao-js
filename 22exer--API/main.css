@@ -1,0 +1,12 @@
+body{
+	display: flex;
+	flex-wrap: wrap;
+}
+.digimon{
+	margin: 1rem;
+	justify-content: center;
+	text-align: center;
+}
+.level{
+	font-size: 0.7rem;
+}
