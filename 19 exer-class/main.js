@@ -38,21 +38,19 @@ class ListaTarefas2 extends ListaTarefas{
 
 
 
-const minhasTarefas = new ListaTarefas2()
+
 const minhaList = new List()
-
-
-
-
-
-
-document.getElementById('novo').onclick = function(){
-    minhasTarefas.add("Testando extends");
-}
 
 document.getElementById('data').onclick = function(){
     minhaList.add("entrei")
 }
 
+
+
+const minhasTarefas = new ListaTarefas2()
+
+document.getElementById('novo').onclick = function(){
+    minhasTarefas.add("Testando extends");
+}
 
 minhasTarefas.meuNome()
