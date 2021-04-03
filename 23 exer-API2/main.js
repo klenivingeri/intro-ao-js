@@ -8,9 +8,15 @@ const saveLocalStorage = (heros)=>{
   Object.keys(heros).forEach(item =>{
     
     var div = document.createElement('div');
-        div.setAttribute('class', 'champion');
-        div.setAttribute("style", `background-image: url(img/${heros[item].id}.jpg)`);
-        div.innerHTML =  `<div class="name"><h3>${heros[item].name}</h3></div>`
+        div.setAttribute('class', 'perfil');
+        
+        div.innerHTML =  `<div class="dentro">
+                          <img class="photo" src="img/${heros[item].id}.jpg">
+                          <div class="nameimg" style="background-image:url('img/${heros[item].id}.jpg')">
+                            <div class="name">
+                              <h1>${heros[item].name}</h1>
+                            </div>
+                          </div>`
       document.getElementById('galery').appendChild(div);
       
     });
@@ -20,10 +26,7 @@ const saveLocalStorage = (heros)=>{
 
 
 /*
-                          <p>AD: ${heros[item].info['attack']} | 
-                          DF: ${heros[item].info['defense']} | 
-                          MG: ${heros[item].info['magic']} | 
-                          DF: ${heros[item].info['difficulty']}</p>
+                          
 
 const leagueoflegends =  JSON.parse(localStorage.getItem('@leagueoflegends'))
 if(!leagueoflegends){
