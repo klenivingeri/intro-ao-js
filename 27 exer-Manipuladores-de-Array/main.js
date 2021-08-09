@@ -84,7 +84,7 @@ function someTest(){ // Some retonar true se houver pelo menos um item no arr.
      console.log(newSome)
 }
 
-function reduceTest(){ // Reduce acumula valores. precisa acrescendar um 0 depois da função.
+function reduceTest(){ // Reduce acumula valores. precisa acrescentar um 0 depois da função.
      let newReduce = obj.reduce( (total, regiao, index, arr ) => {
           let { name, size } = regiao;
                return total + size;
