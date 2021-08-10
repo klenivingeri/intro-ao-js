@@ -13,7 +13,7 @@ console.log(data2);
 //data2.getDate();
 //data2.getDay();
 //data2.getFullYear(); 
-// 0 é domingo sabado é 6
+// 0 é domingo, sabado é 6
 
 var dias = ["Domingo", "Segunda", "Terça", "Quarta","Quinta","Sexta","Sabado"]
 
