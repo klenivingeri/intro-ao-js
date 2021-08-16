@@ -1,4 +1,4 @@
-class Aula{
+class Classroom{
   constructor(name, lesson){
     this._name = name;
     this._lesson = lesson;

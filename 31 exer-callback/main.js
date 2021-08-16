@@ -5,6 +5,10 @@ function newBotton(text, callback){
   callback($button, text);
   $button.style.fontSize = '40px';
 
+  $button.addEventListener('click', ()=>{
+    alert(`Você clicou em ${text}`)
+ })
+
   $body.insertAdjacentElement("beforeend", $button);
 }
 
@@ -14,18 +18,12 @@ newBotton('Confirm', (button, text) =>{ // função de callback
   color:white;
   `;
 
-  button.addEventListener('click', ()=>{
-    alert(`Você clicou em ${text}`)
- })
- 
 })
+
 newBotton('Cancel',(button, text) =>{  // função de callback
   button.style.cssText = `
   background:red;
   color:white;
   `;
-  button.addEventListener('click', ()=>{
-    alert(`Você clicou em ${text}`)
- })
 
 })

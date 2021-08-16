@@ -1,11 +1,13 @@
-let matter  = new Aula('Aprendendo sobre Classes', 28)
+let $matter  = new Classroom('Aprendendo sobre Classes', 28)
 
-let h1 = document.querySelector(".h1")
+let $h1 = document.querySelector(".h1")
 
-h1.innerHTML = matter.getName()
+$h1.innerHTML = $matter.getName()
 
-let obj = {
-  matter
+let $obj = {
+  $matter
 }
 
-console.log(obj)
+console.log($obj)
+console.log($obj.$matter)
+console.log($obj.$matter._name)
