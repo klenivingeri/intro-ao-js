@@ -1,0 +1,38 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.game{
+  width: 100%;
+  margin-right: 100px;
+  
+}
+.run{
+  width: 100%;
+  border: 2px solid black;
+}
+
+.run .faixa{
+  width: 20px;
+  height: 100px;
+  background: white;
+  position:absolute;
+  right: 0;
+}
+.car {
+  border-radius: 1px 3px 3px 1px;
+  margin: 10px;
+  width: 15px;
+  height: 10px;
+  position: relative;
+  animation-name: example;
+  animation-direction: reverse;  
+}
+
+@keyframes example {
+  0%   {left:100%; top:0px; width: 15px;}
+  15%   {width: 25px; }
+  100% {left:0%; top:0px; width: 15px; }
+}
