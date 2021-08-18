@@ -1,8 +1,5 @@
 const car = new Car(1,2,3,4)
 
-
-
-
 var win = 8000;
 function createCar(color, callback){
 
@@ -24,7 +21,7 @@ function speed(){
   if(speedRun <= 3000){
     speedRun = 4000
   }
-  return speedRun
+  return speedRun;
 }
 
 function winner(color,callback){
@@ -34,10 +31,13 @@ function winner(color,callback){
   }
 }
 
+if(confirm('Criar Corrida ?')){
 createCar('green', speed())
 createCar('red', speed())
 createCar('yellow', speed())
 createCar('blue', speed())
+}
+
 
 
 
