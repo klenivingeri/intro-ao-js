@@ -1,5 +1,5 @@
 
- function pega(suco){
+ function pega(suco){ //retorna uma promise
    const fruta = new Promise((resolve,reject) =>{
       if(suco == 'laranja'){
         const resultado  = 'Eu quero suco de ' + suco
@@ -13,6 +13,6 @@ return fruta;
  }
 
 
-pega('laranja')
+pega('laranja') //retorna uma promise
   .then(result => text = result)
   .catch(erro => console.log(erro))
