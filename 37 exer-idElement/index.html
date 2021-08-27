@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        #app{
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 250px 250px;
+            width: 300px;
+            color:white;
+            margin: 0 auto;
+        }
+        #app > div{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <div id="app-left-top" style="background-color:#9F7AEA;">left-top</div>
+        <div id="app-right-top" style="background-color:#805AD5;">right-top</div>
+        <div id="app-left-button" style="background-color:#6B46C1;">left-button</div>
+        <div id="app-right-button" style="background-color:#553C9A;">right-button</div>
+    </div>
+    
+    <!--  -->
+    <script src='main.js'></script>
+</body>
+</html>
