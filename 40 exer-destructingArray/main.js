@@ -1,34 +1,46 @@
+class DestructingArray{
+  constructor(){
+    this.arr = ['Azul', 'Laranja', 'Rosa', ' Verde', 'Vermelho'];
 
-class Destructing{
-  constructor(name, lastname, age){
-    this.user = {
-        name,
-        lastname,
-        age
-    } 
+    this.contatos = [
+      { nome:'Alex Júnior', numero:'1234-5678' }, 
+      { nome:'Carolina Moya', numero:'1234-6789' }, 
+      { nome:'Fernando Jorge', numero:'1234-5567'}
+    ]
   }
-
-  show(){
-    const {name, lastname, age } = this.user
-    console.log(`Name: ${name} ${lastname} idade: ${age}`)
+  showArr(a, b){
+    console.log(`${this.arr[a]} ${this.arr[b]}`)
+  } //showArr
+  destructingArr(){
+    const [,,cor1,,cor2] = this.arr // pula os index com as virgulas ','
+    console.log(`${cor1} ${cor2}`)
+  }//destructingArr
+  destructingArrContact(){
+    const [, carol] = this.contatos
+    this.showNum(carol)
+    this.showNumberFernando(this.contatos)
+  } //destructingArrContact
+  showNum({numero}){
+    console.log(numero)
   }
-  showLabel(){
-    const {name:n, lastname:l, age:a } = this.user
-    console.log(`Name: ${n} ${l} idade: ${a}`)
-  }
-  showObj({name, lastname, age},  test  = 0){
-    console.log(`Name: ${name} ${lastname} idade: ${age} / ${test}`)
+  
+  showNumberFernando([,,{numero}]){
+    console.log(numero)
   }
 }
+console.log('Desestruturando Array part 1')
+let destructingArray = new DestructingArray()
 
-let destructing = new Destructing('Erick','Kleniving', 29)
+destructingArray.showArr(2,4)
+destructingArray.destructingArr()
+destructingArray.destructingArrContact()
 
-destructing.show()
-destructing.showLabel()
+//-------------------------------------------------------------
+console.log('Desestruturando Array part 2')
 
-let usuario = {
-  name: 'Erick',
-  lastname: 'Kleniving',
-  age: 29
-} 
-destructing.showObj(usuario, 'testando')
+const rotas = {
+  rapidas: ['Rodovia', 'Estrada X', 'Estrada Y']
+}
+
+const { rapidas:[,,rapida] } = rotas
+console.log(rapida)
