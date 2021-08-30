@@ -4,12 +4,14 @@ const novaLista = lista.map(function(item){
     return item * 5
 })
 console.log(novaLista)
-//percorre a lista
+
+//percorre a lista e retorna um novo array
 const novaListaa = lista.map(function(item, index){
-    console.log(`index ${index} x ${item} item :${index * item} `)
+    let mult =  index * item
+    console.log(`index ${index} x ${item} item :${mult} `)
 
     
-    return index * item
+    return mult
 })
 
 console.log(novaListaa)
