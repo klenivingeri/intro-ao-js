@@ -13,7 +13,7 @@ function contaQuantidadeVogaisNaoAcentuadas(palavra){
 console.log(contaQuantidadeVogaisNaoAcentuadas('Escrevendo uma frase'))
 
 //-------------------------------------------------------------------
-let items = ['rosa','amarelo','verde', 'vermelho', 'azul']
+let items = "azul laranja vermelho rosa verde".split(' '); //cria um array divindo no "espaço entre as palavras"
 function pesquisa(...palavra){
 
   for( let item of items){
