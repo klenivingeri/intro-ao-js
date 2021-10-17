@@ -1,7 +1,6 @@
 # Aprendendo JavaScript
-  Por padrão os navegadores conseguem ler a linguagem javaScript.
-  Vamos aprender 3 formas de carrega-lo.
-  
+Por padrão os navegadores conseguem ler a linguagem javaScript, vamos aprender 3 formas de carrega-lo.
+
 1 ) Podemos utilizar a tag `script` e escrever nosso codigo dentro dela.
 ~~~HTML
 <html>
@@ -11,6 +10,7 @@
     </script>
   </head>
   <body>
+    ...
   </body>
 </html>
 ~~~
@@ -26,15 +26,18 @@
     -->
   </head>
   <body>
+    ...
   </body>
 </html>
 ~~~
 3 ) Agora é a forma mais utilizada na internet, onde o nosso arquivo é carregado no final do `body`.
+~~~HTML
 <html>
   <head>
   </head>
   <body>
-  ...
-      <script src="main.js"></script>
+    ...
+    <script src="main.js"></script>
   </body>
 </html>
+~~~
