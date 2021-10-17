@@ -7,7 +7,7 @@ console.log('1 Estou aqui')
 ~~~
 2 ) `alert()`, vai aparecer como um pop up na tela 
 ~~~javascript
-console.log('2 Estou aqui')
+alert('2 Estou aqui')
 ~~~
 3 ) `document.write()` será escrito no próprio documento.
 ~~~javascript
