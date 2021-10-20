@@ -1,1 +1,1 @@
-# Verificando tipo da variavel
+# Verdadeiro e Falso

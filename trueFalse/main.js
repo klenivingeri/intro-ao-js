@@ -1,25 +1,21 @@
-function verifica(val){
-  console.log(val,'é do tipo: ', typeof val)
+function trueOrFalse(val){
+  return val ? console.log(true) : console.log(false)
 }
-function test(){}
-class Classe{
-  constructor(nome){
-    this.nome = nome
-  }
-  Pega(){
-    console.log(this.nome)
-  }
-}
-const classe = new Classe('Erick')
-verifica('abcdef') //string
-verifica('47') //string
-verifica(47) // number
-verifica(true) // boolean 
-verifica(null) //object
-verifica(undefined) //undefined
-verifica(test) // function
-verifica(classe) // object
-verifica([1,2,3,'4','5']) //object
-verifica({nome:'Erick'}) //object
+trueOrFalse([]) // object é true
+trueOrFalse({}) // object é true
+trueOrFalse(new Boolean(false)) // object é true
+trueOrFalse(new String('false')) // object é true
+trueOrFalse('teste') // true
+trueOrFalse(1) // true
+trueOrFalse(-1) // true
+var obj = {nome: 'Erick'}
+trueOrFalse(obj) // true
+trueOrFalse(obj.nome) // atributo existe é true
 
-
+trueOrFalse()  // false
+trueOrFalse(false) // false
+trueOrFalse(null) // false
+trueOrFalse(undefined) // false
+trueOrFalse('') // false
+trueOrFalse(0) // false
+trueOrFalse(obj.idade) // atributo não existe é false

@@ -1,0 +1,1 @@
+# Analisa, igual == e identico ===
